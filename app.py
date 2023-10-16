@@ -6,6 +6,9 @@ from flask_bcrypt import Bcrypt
 import requests
 from models import db, connect_db, User, Favorites
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 
@@ -14,11 +17,17 @@ bcrypt = Bcrypt(app)
 CORS(app)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///cocktailsdb'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = True
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', "it's a secret")
 app.config['SQLALCHEMY_ECHO'] = True
+
+if not app.config['SECRET_KEY'] or not app.config['SQLALCHEMY_DATABASE_URI']:
+    raise ValueError("Missing essential configurations.")
+
 
 connect_db(app)
 with app.app_context(): 
