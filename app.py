@@ -19,7 +19,7 @@ CORS(app)
 
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-app.config['SQLALCHEMY_DATABASE_URI'] =  'postgres://udboaroztxgnvt:f854677fc29a6a06175ca6acb1dd0ddfb1eb5f86450848d04a924ca1fb28a75d@ec2-44-213-228-107.compute-1.amazonaws.com:5432/d1nkleopdgmg3i'
+app.config['SQLALCHEMY_DATABASE_URI'] =  ' postgres://sxffwliqidmtxb:af65718c67e9ece5720dc66d3b8be0a8a34f3860539f5143f2f1c3199981a806@ec2-44-213-151-75.compute-1.amazonaws.com:5432/dba77n1q09ddgl'
 # if os.environ.get('DATABASE_URL'):
 #     app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 # else:
