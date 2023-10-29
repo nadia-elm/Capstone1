@@ -18,9 +18,9 @@ CORS(app)
 
 
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-app.config['SQLALCHEMY_DATABASE_URI'] =  'postgres://vdotbtoyaqsuel:d5b424d375c1fd33ea3311b71f7aeaa1cb997a8c8af0d30b9755b180a1057931@ec2-35-169-9-79.compute-1.amazonaws.com:5432/d87ttft1ojlb07'
-# if os.environ.get('DATABASE_URL'):
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+# app.config['SQLALCHEMY_DATABASE_URI'] =  'postgres://vdotbtoyaqsuel:d5b424d375c1fd33ea3311b71f7aeaa1cb997a8c8af0d30b9755b180a1057931@ec2-35-169-9-79.compute-1.amazonaws.com:5432/d87ttft1ojlb07'
+# # if os.environ.get('DATABASE_URL'):
 #     app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 # else:
 #     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///cocktailsdb'
