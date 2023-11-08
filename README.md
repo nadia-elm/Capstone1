@@ -15,8 +15,8 @@ A Flask web application that allows users to view a list of cocktails, register,
 - **View Favorites**: Users can view their list of favorite cocktails.
 
 - ## Technology Stack
-- Front End : HTML5 CSS
-- Back End : Python3 Postgresql Flask
+- Front End : HTML5  - CSS - Bootstrap
+- Back End : Python3 - Postgresql - Flask
 - 
 
 ## Installation
