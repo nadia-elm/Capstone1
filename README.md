@@ -17,6 +17,11 @@ A Flask web application that allows users to view a list of cocktails, register,
 - ## Technology Stack
 - Front End : HTML5  - CSS - Bootstrap
 - Back End : Python3 - Postgresql - Flask
+
+- ## User Flow
+- First time users will be able to see a list of cards of cocktails, with a button to register/login
+- to register the user will be required to input a username, email, and a password
+- after signup the user will see his username on the navbar, and he will be able to use add to favorites feature.
 - 
 
 ## Installation
